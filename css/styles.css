@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary: rgb(0, 0, 0);
+    --secondary: hsl(0, 0%, 100%);
+    --alternative: rgba(166, 6, 6, 0.8);
+    --awesomeColor: rgb(234, 43, 43);
+    --otherColor: #09bb1577;
+
+}
+
+body{
+
+    background-color: black;
+    color: white;
+}
+h1,h2,h3,h4,h5,h6{
+
+    font-size: x-large;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px 10px;
+    margin: 20px;
+}
+
+/* Grid-columns Example 1*/
+
+.grid-container{
+
+    display:grid;
+    column-gap: 20px;
+    grid-template-columns: auto auto auto ;
+    grid-row-start:2;
+    row-gap: 20px;
+    background-color: var(--alternative);
+    margin-top: 20px;
+
+    
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+  }
+
+
+  /* grid-row example */
+
+  .container{
+    display:grid;
+    column-gap: 20px;
+    grid-template-rows: auto auto auto;
+    grid-row-start: 2;
+    row-gap:30px;
+    background-color:var(--otherColor);
+    margin-top: 20px;
+  }
